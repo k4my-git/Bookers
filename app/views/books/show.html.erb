@@ -13,8 +13,8 @@
 		<%= @book.body %>
 	</p>
 
-	<%= link_to("Edit", books_edit_path(@book), {class: 'links'}) %>
+	<%= link_to("Edit", edit_book_path(@book), {class: 'links'}) %>
 	|
-	<%= link_to("Back", books_index_path, {class: 'links'}) %>
+	<%= link_to("Back", books_path, {class: 'links'}) %>
 
 </body>

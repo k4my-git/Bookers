@@ -14,10 +14,10 @@ class BooksController < ApplicationController
     book = Book.new(book_params)
     if book.save
       flash[:notice] = 'Book was successfully created.'
-      redirect_to books_show_path(book)
+      redirect_to book_path(book)
     else
-      flash[:alert] = 'Book create error'
-      redirect_to books_index_path
+      flash[:alert] = "error_can't be blank"
+      redirect_to books_path
     end
   end
 
@@ -29,10 +29,10 @@ class BooksController < ApplicationController
     book = Book.find(params[:id])
     if book.update(book_params)
       flash[:notice] = 'successfully updated.'
-      redirect_to books_show_path(book)
+      redirect_to book_path(book)
     else
-      flash[:alert] = 'error edit.'
-      redirect_to books_edit_path
+      flash[:alert] = "error_can't be blank"
+      redirect_to edit_book_path
     end
   end
 
@@ -44,10 +44,10 @@ class BooksController < ApplicationController
   	book = Book.find(params[:id])
   	if book.destroy
   	  flash[:notice] = 'successfully destroyed.'
-  	  redirect_to books_index_path
+  	  redirect_to books_path
   	else
   	  flash[:alert] = 'error create.'
-  	  redirect_to books_index_path
+  	  redirect_to books_path
   	end
   end
 

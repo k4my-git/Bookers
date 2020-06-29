@@ -5,7 +5,7 @@
         </div>
     <% end %>
 	<h1>Editing Book</h1>
-	<%= form_for(@book, url: books_update_path(@book)) do |f| %>
+	<%= form_for(@book, url: update_path(@book)) do |f| %>
 		<div class="edit-form">
 			<label>Title</label><br>
 			<%= f.text_field :title %>
@@ -17,8 +17,8 @@
 		<div class="edit-form">
 			<%= f.submit 'Update Book' %>
 		</div>
-		<%= link_to("Show", books_show_path(@book), {class: 'links'}) %>
+		<%= link_to("Show", book_path(@book), {class: 'links'}) %>
 		|
-		<%= link_to("Back", books_index_path, {class: 'links'}) %>
+		<%= link_to("Back", books_path, {class: 'links'}) %>
 	<% end %>
 </body>
