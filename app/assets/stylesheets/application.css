@@ -1,0 +1,101 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 33px;
+}
+
+h1 {
+	font-size: 27px;
+}
+
+.top-box {
+	margin: 33px;
+}
+
+.top-text {
+	font-size: 13px;
+	margin: 33px;
+}
+
+.start_msg {
+	color: #000;
+	font-size: 13px;
+	margin: 33px;
+}
+
+.flash-notice {
+	font-size: 13px;
+	color: green;
+	margin: 33px;
+}
+
+.flash-alert {
+	font-size: 13px;
+	color: red;
+}
+
+table {
+	font-size: 13px;
+	
+}
+table th {
+	text-align: center;
+	padding: px;
+}
+table td {
+	text-align: left;
+	padding: 5px;
+	color: #000;
+}
+
+.links{
+	color:black;
+	padding: 5px;
+	font-size: 13px;
+}
+
+.index-new {
+	margin: 10px 0;
+}
+
+.index-form {
+	font-size: 13px;
+	margin-bottom: 10px;
+}
+
+.index-submit {
+	padding: 1px 6px;
+	display: inline-block;
+}
+
+.show-body {
+	font-size: 13px;
+}
+
+.show-text {
+	margin: 33px;
+}
+
+.edit-form {
+	font-size: 13px;
+	margin-bottom: 10px;
+}
